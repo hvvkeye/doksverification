@@ -1,218 +1,218 @@
 window.CONTRACT = {
-  address: '0x5A116c7a355D8b508aA3D4480Ae78E47efcdEc4D',
+  address: '0xa8fED806ca5d61f90E2162c38225d1BE4F19BaA6',
   network: 'https://polygon-rpc.com/',
   explore: 'https://polygonscan.com/',
   abi: [
     {
-      anonymous: false,
-      inputs: [
-        {
-          indexed: true,
-          internalType: 'address',
-          name: '_exporter',
-          type: 'address',
-        },
-        {
-          indexed: false,
-          internalType: 'string',
-          name: '_ipfsHash',
-          type: 'string',
-        },
-      ],
-      name: 'addHash',
-      type: 'event',
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
     },
     {
-      inputs: [
+      "anonymous": false,
+      "inputs": [
         {
-          internalType: 'address',
-          name: '_add',
-          type: 'address',
+          "indexed": true,
+          "internalType": "address",
+          "name": "_exporter",
+          "type": "address"
         },
         {
-          internalType: 'string',
-          name: '_info',
-          type: 'string',
-        },
+          "indexed": false,
+          "internalType": "string",
+          "name": "_ipfsHash",
+          "type": "string"
+        }
       ],
-      name: 'add_Exporter',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "addHash",
+      "type": "event"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: 'hash',
-          type: 'bytes32',
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
         },
         {
-          internalType: 'string',
-          name: '_ipfs',
-          type: 'string',
-        },
+          "internalType": "string",
+          "name": "_ipfs",
+          "type": "string"
+        }
       ],
-      name: 'addDocHash',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "addDocHash",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'address',
-          name: '_add',
-          type: 'address',
+          "internalType": "address",
+          "name": "_add",
+          "type": "address"
         },
         {
-          internalType: 'string',
-          name: '_newInfo',
-          type: 'string',
-        },
+          "internalType": "string",
+          "name": "_info",
+          "type": "string"
+        }
       ],
-      name: 'alter_Exporter',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "add_Exporter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'address',
-          name: '_newOwner',
-          type: 'address',
+          "internalType": "address",
+          "name": "_add",
+          "type": "address"
         },
+        {
+          "internalType": "string",
+          "name": "_newInfo",
+          "type": "string"
+        }
       ],
-      name: 'changeOwner',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "alter_Exporter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'address',
-          name: '_add',
-          type: 'address',
-        },
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
       ],
-      name: 'delete_Exporter',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "name": "changeOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [],
+      "name": "count_Exporters",
+      "outputs": [
         {
-          internalType: 'bytes32',
-          name: '_hash',
-          type: 'bytes32',
-        },
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
       ],
-      name: 'deleteHash',
-      outputs: [],
-      stateMutability: 'nonpayable',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [],
-      stateMutability: 'nonpayable',
-      type: 'constructor',
+      "inputs": [],
+      "name": "count_hashes",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'count_Exporters',
-      outputs: [
+      "inputs": [
         {
-          internalType: 'uint16',
-          name: '',
-          type: 'uint16',
-        },
+          "internalType": "bytes32",
+          "name": "_hash",
+          "type": "bytes32"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "deleteHash",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'count_hashes',
-      outputs: [
+      "inputs": [
         {
-          internalType: 'uint16',
-          name: '',
-          type: 'uint16',
-        },
+          "internalType": "address",
+          "name": "_add",
+          "type": "address"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "name": "delete_Exporter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'bytes32',
-          name: '_hash',
-          type: 'bytes32',
-        },
+          "internalType": "bytes32",
+          "name": "_hash",
+          "type": "bytes32"
+        }
       ],
-      name: 'findDocHash',
-      outputs: [
+      "name": "findDocHash",
+      "outputs": [
         {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         },
         {
-          internalType: 'uint256',
-          name: '',
-          type: 'uint256',
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         },
         {
-          internalType: 'string',
-          name: '',
-          type: 'string',
+          "internalType": "string",
+          "name": "",
+          "type": "string"
         },
         {
-          internalType: 'string',
-          name: '',
-          type: 'string',
-        },
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [
+      "inputs": [
         {
-          internalType: 'address',
-          name: '_add',
-          type: 'address',
-        },
+          "internalType": "address",
+          "name": "_add",
+          "type": "address"
+        }
       ],
-      name: 'getExporterInfo',
-      outputs: [
+      "name": "getExporterInfo",
+      "outputs": [
         {
-          internalType: 'string',
-          name: '',
-          type: 'string',
-        },
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: 'owner',
-      outputs: [
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
         {
-          internalType: 'address',
-          name: '',
-          type: 'address',
-        },
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
       ],
-      stateMutability: 'view',
-      type: 'function',
-    },
-  ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
 }
 const web3 = new Web3(new Web3.providers.HttpProvider(window.CONTRACT.network))
 const contract = new web3.eth.Contract(
