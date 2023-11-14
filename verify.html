@@ -89,19 +89,16 @@
       </div>
     </nav>
     <div class="container">
-      <!-- upload form -->
-      <div data-aos="zoom-in" class="col p-3 data-upload my-3 mx-md-2">
         <input onchange="get_Sha3()" id="doc-file" type="file" />
         <span id="note" class="text-danger"></span>
         <img id="loader" src="files/loader.svg" alt="loader" />
         <input
           onclick="verify_Hash()"
-          class="btn mt-5 upload-button d-block main-button"
+          class="btn  upload-button main-button"
           type="button"
           value="Verify"
           id="upload_file_button"
         />
-      </div>
       <!-- Verification result -->
       <div class="box d-none my-3 row gx-0 mx-md-2 transaction-status col-lg">
         <div class="left col-lg-6 p-3 d-flex flex-column">
